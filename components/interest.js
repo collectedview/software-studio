@@ -7,27 +7,26 @@ import FAQ from "@components/functional-components/faq";
 function Introduction() {
   return (
     <>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-xl-6">
-            <Image
-              src="/images/placeholder.png"
-              alt="Interest Image"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="col-xl-6">
-            <h2 className="display-2">
-              Ut enim ad minim veniam, quis nostrud exercitation
-            </h2>
-            <h3 className="display-6">
-              Excepteur sint occaecat cupidatat non proident
-            </h3>
-            <FAQ />
+      <section id="interest">
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-xl-6 content-opposite">
+              <Image
+                src="/images/software-studio-cloud.svg"
+                alt="Interest Image"
+                width={750}
+                height={750}
+                className="img-fluid"
+              />
+            </div>
+            <div className="col-xl-6 content">
+              <h2>Launch today, not tommorow</h2>
+              <h4>Move with agility to user traffic</h4>
+              <FAQ />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

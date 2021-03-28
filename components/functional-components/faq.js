@@ -5,7 +5,7 @@ function FAQ() {
     <>
       <div className="accordion accordion-flush" id="accordionFlushExample">
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingOne">
+          <span className="accordion-header" id="flush-headingOne">
             <button
               className="accordion-button collapsed"
               type="button"
@@ -14,9 +14,9 @@ function FAQ() {
               aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
-              Accordion Item #1
+              Make ideas come to users
             </button>
-          </h2>
+          </span>
           <div
             id="flush-collapseOne"
             className="accordion-collapse collapse"
@@ -31,7 +31,7 @@ function FAQ() {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingTwo">
+          <span className="accordion-header" id="flush-headingTwo">
             <button
               className="accordion-button collapsed"
               type="button"
@@ -40,9 +40,9 @@ function FAQ() {
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
             >
-              Accordion Item #2
+              Quicker Action to market
             </button>
-          </h2>
+          </span>
           <div
             id="flush-collapseTwo"
             className="accordion-collapse collapse"
@@ -58,7 +58,7 @@ function FAQ() {
           </div>
         </div>
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingThree">
+          <span className="accordion-header" id="flush-headingThree">
             <button
               className="accordion-button collapsed"
               type="button"
@@ -67,9 +67,9 @@ function FAQ() {
               aria-expanded="false"
               aria-controls="flush-collapseThree"
             >
-              Accordion Item #3
+              Improve Experience with data
             </button>
-          </h2>
+          </span>
           <div
             id="flush-collapseThree"
             className="accordion-collapse collapse"

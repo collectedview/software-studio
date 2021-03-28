@@ -1,26 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
 
 /* eslint-disable react/jsx-no-duplicate-props */
 function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", changeBackground);
+  }
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav
+        className={
+          navbar
+            ? "navbar fixed-top navbar-expand-xl navbar-light active"
+            : "navbar fixed-top navbar-expand-xl navbar-light"
+        }
+      >
         <div className="container-fluid">
           <Link href="/">
             <a className="navbar-brand">
               <Image
-                src="/images/placeholder.png"
+                src="/images/software-studio.svg"
                 className="img-fluid"
                 alt="Brand Logo"
-                width={50}
-                height={50}
+                width={100}
+                height={75}
                 className="d-inline-block align-text-top"
               />
             </a>
           </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -32,76 +51,40 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav position-absolute top-50 start-50 translate-middle">
               <li className="nav-item">
-                <Link href="/">
-                  <a className="nav-link active" aria-current="page">
-                    Home
-                  </a>
+                <Link href="/#introduction">
+                  <a className="nav-link">About</a>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/">
-                  <a className="nav-link">Link</a>
+                <Link href="/#interest">
+                  <a className="nav-link">Solutions</a>
                 </Link>
-              </li>
-              <li className="nav-item dropdown">
-                <Link href="/">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <Link href="/">
-                      <a className="dropdown-item">Action</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <a className="dropdown-item">Another action</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <Link href="/">
-                      <a className="dropdown-item">Something else here</a>
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li className="nav-item">
-                <Link href="/">
-                  <a
-                    className="nav-link disabled"
-                    tabIndex="-1"
-                    aria-disabled="true"
-                  >
-                    Disabled
-                  </a>
+                <Link href="/#features">
+                  <a className="nav-link">Features</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/#call-to-action">
+                  <a className="nav-link">Pricing</a>
                 </Link>
               </li>
             </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <div className="position-absolute top-50 end-0 translate-middle">
+              <Link href="/#call-to-action">
+                <button
+                  className="btn btn-primary call-to-action"
+                  type="submit"
+                >
+                  Get Started
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

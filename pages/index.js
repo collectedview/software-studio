@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Header />
+      <Navbar />
       <main>
-        <Navbar />
         <Introduction />
         <Interest />
         <Technology />
