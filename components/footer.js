@@ -40,10 +40,12 @@ function Footer() {
                 <Link href="https://collectedview.io/">
                   <a target="_blank">
                     <Image
+                      src="/collectedview-software-studio.png"
+                      alt="Collectedview Software Studio"
                       height={50}
                       width={200}
-                      src="/images/collectedview-software-studio.png"
-                      alt="Collectedview Software Studio"
+                      loading="lazy"
+                      className="img-fluid"
                     />
                   </a>
                 </Link>

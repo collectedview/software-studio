@@ -17,6 +17,11 @@ function Navbar() {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeBackground);
   }
+
+  const [navCollapsed, setNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setNavCollapsed(!navCollapsed);
+
   return (
     <>
       <nav
@@ -28,13 +33,14 @@ function Navbar() {
       >
         <div className="container-fluid">
           <Link href="/">
-            <a className="navbar-brand">
+            <a className="navbar-brand" onClick={setNavCollapsed}>
               <Image
-                src="/images/software-studio.svg"
+                src="/software-studio.svg"
                 className="img-fluid"
                 alt="Brand Logo"
                 width={100}
                 height={75}
+                loading="lazy"
                 className="d-inline-block align-text-top"
               />
             </a>
@@ -46,32 +52,44 @@ function Navbar() {
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            aria-expanded={!navCollapsed ? true : false}
             aria-label="Toggle navigation"
+            onClick={handleNavCollapse}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className={`${navCollapsed ? "collapse" : ""} navbar-collapse`}
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav position-absolute top-50 start-50 translate-middle">
               <li className="nav-item">
                 <Link href="/#introduction">
-                  <a className="nav-link">About</a>
+                  <a className="nav-link" onClick={handleNavCollapse}>
+                    About
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/#interest">
-                  <a className="nav-link">Solutions</a>
+                  <a className="nav-link" onClick={handleNavCollapse}>
+                    Solutions
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/#features">
-                  <a className="nav-link">Features</a>
+                  <a className="nav-link" onClick={handleNavCollapse}>
+                    Features
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/#call-to-action">
-                  <a className="nav-link">Pricing</a>
+                  <a className="nav-link" onClick={handleNavCollapse}>
+                    Pricing
+                  </a>
                 </Link>
               </li>
             </ul>
@@ -80,6 +98,7 @@ function Navbar() {
                 <button
                   className="btn btn-primary call-to-action"
                   type="submit"
+                  onClick={handleNavCollapse}
                 >
                   Get Started
                 </button>

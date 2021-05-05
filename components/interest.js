@@ -12,10 +12,11 @@ function Introduction() {
           <div className="row">
             <div className="col-xl-6 content-opposite">
               <Image
-                src="/images/software-studio-cloud.svg"
+                src="/software-studio-cloud.svg"
                 alt="Interest Image"
                 width={750}
                 height={750}
+                loading="lazy"
                 className="img-fluid"
               />
             </div>

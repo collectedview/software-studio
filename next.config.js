@@ -1,6 +1,9 @@
 /* eslint-disable no-undef */
-
 module.exports = {
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   async redirects() {
     return [
       {
@@ -13,6 +16,19 @@ module.exports = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/404.html/",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/404.html",
+        destination: "/",
+        permanent: true,
+      },
     ];
+  },
+  future: {
+    webpack5: true,
   },
 };

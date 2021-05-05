@@ -1,6 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 
 function CallToAction() {
@@ -14,9 +13,9 @@ function CallToAction() {
                 <h2>Deploy your solution today</h2>
                 <h4>Quickly iterable react framework in next.js</h4>
                 <p className="lead">
-                  Ventures ready to strike with the iron hot. Move quickly into
-                  your new product solution instead of idle time spent thinking
-                  through your interactive elements.
+                  Ventures ready to strike with the iron hot. Simplified React
+                  architecture within Next.js server technology to reach the end
+                  of the globe with ideas and concepts.
                 </p>
               </div>
             </div>
@@ -26,10 +25,10 @@ function CallToAction() {
               <div className="card">
                 <div className="card-body">
                   <h4 className="card-title">Open Source Solution</h4>
-                  <h5 className="card-title">React Ventures</h5>
+                  <h2 className="card-title">React Ventures Application</h2>
                   <p className="card-text">
-                    Download, Fork, Support, and Build in your own time and way
-                    with the framework build for you on GitHub.
+                    Download, Fork, Support, and Build in your own time with the
+                    framework built for you on NPM.
                   </p>
                   <ul className="list-inline font-14 mt-3">
                     <li className="py-1">
@@ -49,13 +48,14 @@ function CallToAction() {
                       Rendered
                     </li>
                   </ul>
-                  <div className="d-flex mt-3 align-items-center">
-                    <h2 className="price">Free</h2>
-                    <div className="ml-auto">
+                  <div className="content-group d-flex mt-auto align-items-center">
+                    <span className="price content-group-item">Free</span>
+                    <div className="content-group-item ml-auto">
                       <Link href="https://www.npmjs.com/package/react-ventures">
                         <a
                           className="btn btn-primary call-to-action"
                           target="_blank"
+                          rel="noreferrer noopener"
                         >
                           Free Plan
                         </a>
@@ -69,10 +69,10 @@ function CallToAction() {
               <div className="card featured">
                 <div className="card-body">
                   <h4 className="card-title">Customized Solution</h4>
-                  <h5 className="card-title">React X Next.js Application</h5>
+                  <h2 className="card-title">React X Next.js Application</h2>
                   <p className="card-text">
-                    Hand coded variant of open source solution with specific
-                    implementation.
+                    Hand-coded variant of open-source solution with specific
+                    implementation to your liking.
                   </p>
                   <ul className="list-inline font-14 mt-3">
                     <li className="py-1">
@@ -92,15 +92,16 @@ function CallToAction() {
                       Addition
                     </li>
                   </ul>
-                  <div className="d-flex mt-3 align-items-center">
-                    <h2 className="price">$2000</h2>
-                    <div className="ml-auto">
+                  <div className="content-group d-flex mt-auto align-items-center">
+                    <span className="price content-group-item">$2000</span>
+                    <div className="content-group-item ml-auto">
                       <Link href="mailto:collectedview@gmail.com">
                         <a
                           className="btn btn-primary call-to-action"
                           target="_blank"
+                          rel="noreferrer noopener"
                         >
-                          Choose Plan
+                          Premium Plan
                         </a>
                       </Link>
                     </div>

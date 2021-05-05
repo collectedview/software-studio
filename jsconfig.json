@@ -1,4 +1,3 @@
-/* Exclude Node Modules & Map Paths to Components (Source Map) - https://code.visualstudio.com/docs/languages/jsconfig */
 {
   "compilerOptions": {
     "module": "commonjs",

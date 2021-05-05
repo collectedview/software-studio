@@ -23,13 +23,13 @@ function Features() {
                 <h5>Future Forward</h5>
                 <p className="lead">
                   Simplified React architecture within Next.js server technology
-                  to reaching the end of the global with ideas and concepts.
+                  to reach the end of the globe with ideas and concepts.
                 </p>
               </div>
               <div className="content-item">
                 <h5>Mindset Focused</h5>
                 <p className="lead">
-                  Narrow views of abstraction create a template for envoring
+                  Narrow views of abstraction create a template for entering
                   particulars to establish finite constructions of ability with
                   the market.
                 </p>
@@ -38,10 +38,11 @@ function Features() {
             <div className="col-xl-6 content-opposite d-flex justify-content-center">
               <div className="d-flex justify-content-center">
                 <Image
-                  src="/images/software-studio-deploy-solution.svg"
+                  src="/software-studio-deploy-solution.svg"
                   alt="Introduction Image"
                   width={750}
                   height={750}
+                  loading="lazy"
                   className="content-opposite-image img-fluid"
                 />
               </div>

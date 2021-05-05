@@ -10,7 +10,7 @@ function Technology() {
           <div className="row">
             <div className="col-xl-2 d-flex justify-content-center">
               <Image
-                src="/images/html5.svg"
+                src="/html5.svg"
                 alt="Technology Image"
                 width={100}
                 height={75}
@@ -19,7 +19,7 @@ function Technology() {
             </div>
             <div className="col-xl-2 d-flex justify-content-center">
               <Image
-                src="/images/css3.svg"
+                src="/css3.svg"
                 alt="Technology Image"
                 width={100}
                 height={75}
@@ -28,7 +28,7 @@ function Technology() {
             </div>
             <div className="col-xl-2 d-flex justify-content-center">
               <Image
-                src="/images/bootstrap.svg"
+                src="/bootstrap.svg"
                 alt="Technology Image"
                 width={100}
                 height={75}
@@ -37,7 +37,7 @@ function Technology() {
             </div>
             <div className="col-xl-2 d-flex justify-content-center">
               <Image
-                src="/images/react.svg"
+                src="/react.svg"
                 alt="Technology Image"
                 width={100}
                 height={75}
@@ -46,7 +46,7 @@ function Technology() {
             </div>
             <div className="col-xl-2 d-flex justify-content-center">
               <Image
-                src="/images/next.svg"
+                src="/next.svg"
                 alt="Technology Image"
                 width={100}
                 height={75}
@@ -55,10 +55,11 @@ function Technology() {
             </div>
             <div className="col-xl-2 d-flex justify-content-center">
               <Image
-                src="/images/github.svg"
+                src="/github.svg"
                 alt="Technology Image"
                 width={100}
                 height={75}
+                loading="lazy"
                 className="img-fluid d-flex justify-content-center"
               />
             </div>

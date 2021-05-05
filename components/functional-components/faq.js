@@ -24,9 +24,10 @@ function FAQ() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is
-              the first item's accordion body.
+              Find your user base with an application that expresses the vibe
+              you are looking to set, quickly customizable, and accessible.
+              Build your dream from an MVP model with a focus on attaining users
+              through a developed, collaborative, and simplified platform.
             </div>
           </div>
         </div>
@@ -50,10 +51,11 @@ function FAQ() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is
-              the second item's accordion body. Let's imagine this being filled
-              with some actual content.
+              Minutes instead of hours makes an impact when it means getting a
+              great idea to market, deliver your solution today and begin
+              scaling. Improve your process to action with familiarity around
+              construct that enables you to identify super users based around
+              problems and tangible solutions.
             </div>
           </div>
         </div>
@@ -77,12 +79,12 @@ function FAQ() {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> className. This is
-              the third item's accordion body. Nothing more exciting happening
-              here in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+              Measure the interaction through analytics, convert users to your
+              platform, drive real people through conversions with a real
+              application platform. Expand instinctive architecture to solving
+              problems, improving concepts, articulating solutions, and
+              delivering alternative methods to allocating indicative factors of
+              success.
             </div>
           </div>
         </div>
