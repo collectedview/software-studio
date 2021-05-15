@@ -1,4 +1,5 @@
 /* Typography */
+
 html,
 body {
   font-display: auto;
@@ -16,6 +17,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
 h1 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 72px;
@@ -24,6 +26,7 @@ h1 {
   color: #d80032;
   margin: 3vh 0;
 }
+
 h2 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 48px;
@@ -32,6 +35,7 @@ h2 {
   color: #edf2f4;
   margin: 3vh 0;
 }
+
 h3 {
   font-family: "Rubik", sans-serif;
   font-size: 48px;
@@ -40,6 +44,7 @@ h3 {
   color: #2b2d42;
   margin: 2vh 0;
 }
+
 h4 {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -48,6 +53,7 @@ h4 {
   color: #8d99ae;
   margin: 2vh 0;
 }
+
 h5,
 h6 {
   font-family: "Rubik", sans-serif;
@@ -58,6 +64,7 @@ h6 {
   color: #d80032;
   margin: 1vh 0;
 }
+
 p {
   font-family: "Rubik", sans-serif;
   font-size: 14px;
@@ -66,6 +73,7 @@ p {
   color: #2b2d42;
   margin: 1vh 0;
 }
+
 a,
 li a,
 button,
@@ -80,21 +88,26 @@ button,
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
 }
+
 a {
   color: #2b2d42;
 }
+
 a:hover {
   color: #d80032;
 }
+
 button,
 .btn {
   padding: 25px 50px;
 }
+
 img {
   display: flex;
   width: 100%;
   height: auto;
 }
+
 ::selection {
   background: rgba(216, 0, 50, 0.3);
 }
@@ -163,13 +176,16 @@ img {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
 }
+
 .navbar .nav-item a:hover {
   color: #d80032 !important;
 }
+
 .navbar.active .call-to-action {
   margin: -45px;
   box-shadow: none;
 }
+
 .navbar .call-to-action {
   display: inline-block;
   position: relative;
@@ -184,6 +200,7 @@ img {
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.3);
   margin: -50px;
 }
+
 .navbar .call-to-action::before {
   content: "";
   position: absolute;
@@ -221,6 +238,7 @@ img {
 .navbar .call-to-action:hover::before {
   opacity: 0;
 }
+
 @media screen and (max-width: 1140px) {
   .navbar .call-to-action {
     margin: -50px;
@@ -262,6 +280,7 @@ img {
 }
 
 /* Introduction */
+
 #introduction {
   position: relative;
 }
@@ -283,9 +302,11 @@ img {
   flex: 1;
   align-self: center;
 }
+
 #introduction p {
   margin: 15px;
 }
+
 #introduction .call-to-action {
   margin: 25px 0;
   color: #edf2f4;
@@ -327,6 +348,7 @@ img {
   border-width: 3px;
   border-radius: 6px;
 }
+
 #scroll-down a span::after {
   content: "";
   display: block;
@@ -344,6 +366,7 @@ img {
   -moz-transform: rotate(-45deg);
   box-sizing: border-box;
 }
+
 .scroll-down a {
   content: "";
   display: block;
@@ -353,6 +376,7 @@ img {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
 .scroll-down a:hover {
   background-color: #ef233c;
   border-color: #d80032;
@@ -450,6 +474,7 @@ img {
 #interest .accordion {
   margin: 50px 0;
 }
+
 #interest .accordion-item {
   padding: 25px 0;
   background-color: transparent;
@@ -457,6 +482,7 @@ img {
   border-bottom-style: solid;
   border-bottom-width: 3px;
 }
+
 #interest .accordion-button {
   padding: 25px 0;
   background-color: transparent;
@@ -785,6 +811,48 @@ img {
   }
   #call-to-action {
     padding: 50px 10px;
+  }
+}
+
+/* Review */
+
+#review {
+  position: relative;
+}
+
+#review .content-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 50px 25px;
+}
+
+#review .content-group-item {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 25px;
+}
+
+#review .content-group-item .clutch-widget {
+  height: auto;
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+  #review .content-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    padding: 100px auto;
+  }
+  #review .content-group-item {
+    padding: 25px 0;
   }
 }
 

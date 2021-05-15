@@ -7,6 +7,7 @@ import Interest from "@components/interest";
 import Technology from "@components/technology";
 import Features from "@components/features";
 import CallToAction from "@components/call-to-action";
+import Review from "@components/review";
 import Footer from "@components/footer";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <Technology />
         <Features />
         <CallToAction />
+        <Review />
       </main>
       <Footer />
     </>
