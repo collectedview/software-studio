@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 function Review() {
   return (
     <>
@@ -18,10 +20,10 @@ function Review() {
                     alt="React Ventures - Ventures | Powered by Next | Product Hunt"
                     style={{
                       width: "250px",
-                      height: "54px",
+                      height: "50px",
                     }}
                     width="250"
-                    height="54"
+                    height="50"
                   />
                 </a>
               </div>
@@ -37,6 +39,20 @@ function Review() {
                   data-height="45"
                   data-clutchcompany-id="1264412"
                 ></div>
+              </div>
+              <div className="content-group-item">
+                <a
+                  href="https://g.page/sftwrstudio/review?rc"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <Image
+                    src="/google-my-business.svg"
+                    alt="Google Reviews"
+                    width={250}
+                    height={50}
+                  />
+                </a>
               </div>
             </div>
           </div>
