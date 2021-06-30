@@ -13,12 +13,10 @@ const Products = () => {
           <div className="row">
             <div className="col-xl-6 offset-xl-3">
               <div className="content">
-                <h2>Deploy your solution today</h2>
-                <h4>Quickly iterable react framework in next.js</h4>
+                <h2>Pre-Bundled Technologies</h2>
                 <p className="lead">
-                  Ventures ready to strike with the iron hot. Simplified React
-                  architecture within Next.js server technology to reach the end
-                  of the globe with ideas and concepts.
+                  Purchase &amp; deploy these pre-built technologies for your
+                  brand, experience, and bring life to your product.
                 </p>
               </div>
             </div>
@@ -28,31 +26,13 @@ const Products = () => {
               <div key={product.sku} className="col-xl-3">
                 <div className="card">
                   <div className="card-body">
-                    <img src={product.image} alt={product.name} />
-                    <h4 className="card-title">Open Source Solution</h4>
-                    <h2 className="card-title">{product.name}</h2>
-                    <p className="card-text">
-                      Download, Fork, Support, and Build in your own time with
-                      the framework built for you on NPM.
-                    </p>
-                    <ul className="list-inline font-14 mt-3">
-                      <li className="py-1">
-                        <i className="far fa-check-square"></i> Single Page
-                        Application
-                      </li>
-                      <li className="py-1">
-                        <i className="far fa-check-square"></i> Loader &
-                        Light/Dark Mode
-                      </li>
-                      <li className="py-1">
-                        <i className="far fa-check-square"></i> Page Speed
-                        Optimized
-                      </li>
-                      <li className="py-1">
-                        <i className="far fa-check-square"></i> Server Side
-                        Rendered
-                      </li>
-                    </ul>
+                    <img
+                      className="card-img-top"
+                      src={product.image}
+                      alt={product.name}
+                    />
+                    <h4 className="card-title">{product.name}</h4>
+                    <p className="card-text">{product.description}</p>
                     <div className="content-group d-flex mt-auto align-items-center">
                       <span className="price content-group-item">
                         {formatCurrencyString({
@@ -60,15 +40,13 @@ const Products = () => {
                           currency: product.currency,
                         })}
                       </span>
-                      <div className="content-group-item ml-auto">
-                        <button
-                          className="btn btn-primary call-to-action"
-                          onClick={() => addItem(product)}
-                        >
-                          Add to cart
-                        </button>
-                      </div>
                     </div>
+                    <button
+                      className="btn btn-primary call-to-action"
+                      onClick={() => addItem(product)}
+                    >
+                      Add to cart
+                    </button>
                   </div>
                 </div>
               </div>

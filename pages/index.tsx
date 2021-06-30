@@ -1,5 +1,8 @@
 import { NextPage } from "next";
 
+import Layout from "../components/Layout";
+import Cart from "../components/Cart";
+
 import Header from "../components/studio/header";
 import Navbar from "../components/studio/navbar";
 import Introduction from "../components/studio/introduction";
@@ -14,18 +17,22 @@ import Footer from "../components/studio/footer";
 const IndexPage: NextPage = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <main>
-        <Introduction />
-        <Interest />
-        <Technology />
-        <Features />
-        <CallToAction />
-        <Review />
-        <Products />
-      </main>
-      <Footer />
+      <Layout>
+        <Cart>
+          <Header />
+          <Navbar />
+          <main>
+            <Introduction />
+            <Interest />
+            <Technology />
+            <Features />
+            <CallToAction />
+            <Review />
+            <Products />
+          </main>
+          <Footer />
+        </Cart>
+      </Layout>
     </>
   );
 };

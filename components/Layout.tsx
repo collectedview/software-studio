@@ -4,10 +4,6 @@ type Props = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: Props) => (
-  <>
-    <div className="container">{children}</div>
-  </>
-);
+const Layout = ({ children }: Props) => <>{children}</>;
 
 export default Layout;
