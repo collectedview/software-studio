@@ -1,9 +1,10 @@
-/* Variables */
+/*
+
 :root {
   --body-color: #fcfdfe;
   --checkout-color: #8f6ed5;
   --elements-color: #6772e5;
-  --body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     sans-serif;
   --h1-color: #1a1f36;
   --h2-color: #7b818a;
@@ -137,8 +138,8 @@ li {
 
 .FormRow,
 fieldset,
-input[type='number'],
-input[type='text'] {
+input[type="number"],
+input[type="text"] {
   border-radius: var(--radius);
   padding: 5px 12px;
   width: 100%;
@@ -148,7 +149,7 @@ input[type='text'] {
   margin-top: 10px;
 }
 
-input[type='range'] {
+input[type="range"] {
   margin: 5px 0;
   width: 100%;
 }
@@ -201,7 +202,6 @@ button:disabled {
   box-shadow: 20px 20px 60px teal, -20px -20px 60px teal;
 }
 
-/* Products */
 .products {
   display: grid;
   gap: 2rem;
@@ -213,7 +213,6 @@ button:disabled {
   max-width: 100%;
 }
 
-/* Test card number */
 .test-card-notice {
   display: block;
   margin-block-start: 1em;
@@ -233,10 +232,9 @@ button:disabled {
   width: 4px;
 }
 
-/* Code block */
 code,
 pre {
-  font-family: 'SF Mono', 'IBM Plex Mono', 'Menlo', monospace;
+  font-family: "SF Mono", "IBM Plex Mono", "Menlo", monospace;
   font-size: 12px;
   background: rgba(0, 0, 0, 0.03);
   padding: 12px;
@@ -324,3 +322,4 @@ pre {
     bottom: 0;
   }
 }
+*/

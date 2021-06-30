@@ -1,9 +1,13 @@
-import { AppProps } from 'next/app'
+import { AppProps } from "next/app";
 
-import '../styles.css'
+import "../styles.css";
+
+/* Theme Styles */
+import "../styles/theme.min.css";
+import "../styles/utilities.min.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;

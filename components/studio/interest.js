@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-import FAQ from "@components/functional-components/faq";
+import FAQ from "../../components/studio/functional-components/faq";
 
 function Introduction() {
   return (

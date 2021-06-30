@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import Copyright from "@components/functional-components/copyright";
+import Copyright from "../../components/studio/functional-components/copyright";
 
 function Footer() {
   return (
