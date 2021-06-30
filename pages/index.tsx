@@ -8,6 +8,7 @@ import Technology from "../components/studio/technology";
 import Features from "../components/studio/features";
 import CallToAction from "../components/studio/call-to-action";
 import Review from "../components/studio/review";
+import Products from "../components/products";
 import Footer from "../components/studio/footer";
 
 const IndexPage: NextPage = () => {
@@ -22,6 +23,7 @@ const IndexPage: NextPage = () => {
         <Features />
         <CallToAction />
         <Review />
+        <Products />
       </main>
       <Footer />
     </>
