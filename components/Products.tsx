@@ -10,16 +10,13 @@ const Products = () => {
 
   return (
     <>
-      <section id="call-to-action">
-        <div className="container">
+      <section id="products">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-xl-6 offset-xl-3">
               <div className="content">
                 <h2>Pre-Bundled Technologies</h2>
-                <p className="lead">
-                  Purchase &amp; deploy these pre-built technologies for your
-                  brand, experience, and bring life to your product.
-                </p>
+                <h4>Purchase &amp; Deploy Pre-built Technologies</h4>
               </div>
             </div>
           </div>
@@ -56,7 +53,7 @@ const Products = () => {
           </div>
           <div className="row">
             <div className="col-xl-6 offset-xl-3">
-              <div className="content">
+              <div className="content-secondary">
                 <CartSummaryFull />
               </div>
             </div>

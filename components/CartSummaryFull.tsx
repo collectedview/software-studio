@@ -40,24 +40,28 @@ const CartSummary = () => {
   return (
     <form onSubmit={handleCheckout}>
       <p suppressHydrationWarning>
-        <h4>
-          <strong>Total:</strong> {formattedTotalPrice}
-        </h4>
+        <h4>Total: {formattedTotalPrice}</h4>
       </p>
-      <button
-        className="cart-style-background"
-        type="submit"
-        disabled={cartEmpty || loading}
-      >
-        Checkout
-      </button>
-      <button
-        className="cart-style-background"
-        type="button"
-        onClick={clearCart}
-      >
-        Clear Cart
-      </button>
+      <div className="content-group d-flex mt-auto align-items-center">
+        <div className="content-group-item featured">
+          <button
+            className="btn btn-primary call-to-action"
+            type="submit"
+            disabled={cartEmpty || loading}
+          >
+            Checkout
+          </button>
+        </div>
+        <div className="content-group-item">
+          <button
+            className="btn btn-primary call-to-action"
+            type="button"
+            onClick={clearCart}
+          >
+            Clear Cart
+          </button>
+        </div>
+      </div>
     </form>
   );
 };
