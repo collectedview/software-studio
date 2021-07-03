@@ -3,6 +3,8 @@ import React from "react";
 import products from "../data/products.json";
 import { useShoppingCart, formatCurrencyString } from "use-shopping-cart";
 
+import CartSummaryFull from "../components/CartSummaryFull";
+
 const Products = () => {
   const { addItem } = useShoppingCart();
 
@@ -55,7 +57,7 @@ const Products = () => {
           <div className="row">
             <div className="col-xl-6 offset-xl-3">
               <div className="content">
-                <h4>Quickly iterable react framework in next.js</h4>
+                <CartSummaryFull />
               </div>
             </div>
           </div>

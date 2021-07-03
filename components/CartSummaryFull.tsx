@@ -39,12 +39,24 @@ const CartSummary = () => {
 
   return (
     <form onSubmit={handleCheckout}>
+      <p suppressHydrationWarning>
+        <h4>
+          <strong>Total:</strong> {formattedTotalPrice}
+        </h4>
+      </p>
       <button
         className="cart-style-background"
         type="submit"
         disabled={cartEmpty || loading}
       >
         Checkout
+      </button>
+      <button
+        className="cart-style-background"
+        type="button"
+        onClick={clearCart}
+      >
+        Clear Cart
       </button>
     </form>
   );
