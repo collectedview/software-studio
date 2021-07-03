@@ -1,7 +1,7 @@
 {
-  "name": "with-stripe-typescript",
+  "name": "software-studio",
   "version": "2.0.0",
-  "description": "Full-stack TypeScript example using Next.js, react-stripe-js, and stripe-node.",
+  "description": "The Solution to Launching Quickly — Software, Startup, Venture, Movement, and Beyond",
   "scripts": {
     "dev": "next",
     "build": "next build",
