@@ -857,25 +857,6 @@ img {
 
 #products {
   padding: 150px 50px;
-  background-color: #2b2d42;
-  background-image: linear-gradient(
-    270deg,
-    rgba(43, 45, 66, 1) 0%,
-    rgba(237, 242, 244, 1) 50%,
-    rgba(237, 242, 244, 1) 100%
-  );
-  background-image: -webkit-linear-gradient(
-    270deg,
-    rgba(43, 45, 66, 1) 0%,
-    rgba(237, 242, 244, 1) 50%,
-    rgba(237, 242, 244, 1) 100%
-  );
-  background-image: -moz-linear-gradient(
-    270deg,
-    rgba(43, 45, 66, 1) 0%,
-    rgba(237, 242, 244, 1) 50%,
-    rgba(237, 242, 244, 1) 100%
-  );
 }
 
 #products .content {
@@ -887,8 +868,12 @@ img {
   margin: 50px 0;
 }
 
+#products h2 {
+  color: #d80032;
+}
+
 #products h4 {
-  color: #d80032 !important;
+  color: #8d99ae;
 }
 
 /* Product Cards */

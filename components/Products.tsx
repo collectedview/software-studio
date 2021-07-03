@@ -3,7 +3,7 @@ import React from "react";
 import products from "../data/products.json";
 import { useShoppingCart, formatCurrencyString } from "use-shopping-cart";
 
-import CartSummaryFull from "../components/CartSummaryFull";
+import CartSummary from "../components/CartSummary";
 
 const Products = () => {
   const { addItem } = useShoppingCart();
@@ -54,7 +54,7 @@ const Products = () => {
           <div className="row">
             <div className="col-xl-6 offset-xl-3">
               <div className="content-secondary">
-                <CartSummaryFull />
+                <CartSummary />
               </div>
             </div>
           </div>

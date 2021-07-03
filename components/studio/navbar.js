@@ -3,10 +3,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import Layout from "../../components/Layout";
-import Cart from "../../components/Cart";
-import CartSummary from "../../components/CartSummary";
-
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
@@ -98,9 +94,11 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={handleNavCollapse}>
-                  <CartSummary />
-                </a>
+                <Link href="/bundles/#products">
+                  <a className="nav-link" onClick={handleNavCollapse}>
+                    Bundles
+                  </a>
+                </Link>
               </li>
             </ul>
             <div className="position-absolute top-50 end-0 translate-middle">

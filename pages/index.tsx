@@ -9,9 +9,9 @@ import Introduction from "../components/studio/introduction";
 import Interest from "../components/studio/interest";
 import Technology from "../components/studio/technology";
 import Features from "../components/studio/features";
+import InlineCallToAction from "../components/studio/inline-call-to-action";
 import CallToAction from "../components/studio/call-to-action";
 import Review from "../components/studio/review";
-import Products from "../components/products";
 import Footer from "../components/studio/footer";
 
 const IndexPage: NextPage = () => {
@@ -26,9 +26,9 @@ const IndexPage: NextPage = () => {
             <Interest />
             <Technology />
             <Features />
+            <InlineCallToAction />
             <CallToAction />
             <Review />
-            <Products />
           </main>
           <Footer />
         </Cart>
