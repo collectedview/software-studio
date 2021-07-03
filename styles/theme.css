@@ -617,6 +617,35 @@ img {
   }
 }
 
+/* Inline Call To Action */
+
+#inline-call-to-action {
+  padding: 50px 25px;
+  background-color: #2b2d42;
+}
+
+#inline-call-to-action h4 {
+  color: #edf2f4;
+  text-align: center;
+}
+
+#inline-call-to-action .call-to-action {
+  margin: 0 0 0 15px;
+  padding: 15px;
+  color: #edf2f4;
+  background-color: transparent;
+  border-color: #edf2f4;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 6px;
+}
+
+#inline-call-to-action .call-to-action:hover {
+  color: #edf2f4;
+  background-color: #d80032;
+  border-color: #d80032;
+}
+
 /* Call To Action */
 
 #call-to-action {

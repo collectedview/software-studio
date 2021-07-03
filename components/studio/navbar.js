@@ -96,7 +96,7 @@ function Navbar() {
               <li className="nav-item">
                 <Link href="/bundles/#products">
                   <a className="nav-link" onClick={handleNavCollapse}>
-                    Bundles
+                    Pre-Bundled
                   </a>
                 </Link>
               </li>

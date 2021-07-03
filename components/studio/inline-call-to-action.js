@@ -5,19 +5,21 @@ import Link from "next/link";
 function InlineCallToAction() {
   return (
     <>
-      <section id="technology">
+      <section id="inline-call-to-action">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 d-flex justify-content-center">
-              <h3>Looking for Pre-built Solutions?</h3>
+            <div className="col-xl-8 d-flex justify-content-center">
+              <h4>
+                See more of our pre-bundled technolgies to purchase &amp; deploy
+              </h4>
             </div>
-            <div className="col-xl-6 d-flex justify-content-center">
+            <div className="col-xl-4 d-flex justify-content-center">
               <Link href="/bundles/#products">
                 <button
                   className="btn btn-primary call-to-action"
                   type="submit"
                 >
-                  Pre-Bundled Technologies
+                  Shop Pre-Bundled
                 </button>
               </Link>
             </div>
