@@ -2,13 +2,12 @@ import { NextPage } from "next";
 
 import Layout from "../components/Layout";
 import Cart from "../components/Cart";
-
 import Header from "../components/studio/header";
 import Navbar from "../components/studio/navbar";
-import Products from "../components/products";
+import Products from "../components/Products";
 import Footer from "../components/studio/footer";
 
-const IndexPage: NextPage = () => {
+const BundlesPage: NextPage = () => {
   return (
     <>
       <Layout>
@@ -25,4 +24,4 @@ const IndexPage: NextPage = () => {
   );
 };
 
-export default IndexPage;
+export default BundlesPage;

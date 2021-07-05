@@ -1,17 +1,27 @@
 import { NextPage } from "next";
+
 import Layout from "../components/Layout";
-
 import Cart from "../components/Cart";
-import CartSummary from "../components/CartSummary";
+import Header from "../components/studio/header";
+import Navbar from "../components/studio/navbar";
+import Products from "../components/Products";
+import Footer from "../components/studio/footer";
 
-const DonatePage: NextPage = () => {
+const ShoppingCart: NextPage = () => {
   return (
-    <Layout>
-      <Cart>
-        <CartSummary />
-      </Cart>
-    </Layout>
+    <>
+      <Layout>
+        <Cart>
+          <Header />
+          <Navbar />
+          <main>
+            <Products />
+          </main>
+          <Footer />
+        </Cart>
+      </Layout>
+    </>
   );
 };
 
-export default DonatePage;
+export default ShoppingCart;

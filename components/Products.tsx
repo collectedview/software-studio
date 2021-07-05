@@ -25,12 +25,8 @@ const Products = () => {
               <div key={product.sku} className="col-xl-3">
                 <div className="card">
                   <div className="card-body">
-                    <img
-                      className="card-img-top"
-                      src={product.image}
-                      alt={product.name}
-                    />
-                    <h4 className="card-title">{product.name}</h4>
+                    <h4 className="card-title">{product.category}</h4>
+                    <h2 className="card-title">{product.name}</h2>
                     <p className="card-text">{product.description}</p>
                     <div className="content-group d-flex mt-auto align-items-center">
                       <span className="price content-group-item">
