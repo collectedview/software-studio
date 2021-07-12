@@ -1,7 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
-
 function Review() {
   return (
     <>
@@ -24,33 +22,6 @@ function Review() {
                     }}
                     width="250"
                     height="50"
-                  />
-                </a>
-              </div>
-              <div className="content-group-item">
-                <script
-                  type="text/javascript"
-                  src="https://widget.clutch.co/static/js/widget.js"
-                ></script>
-                <div
-                  className="clutch-widget"
-                  data-url="https://widget.clutch.co"
-                  data-widget-type="2"
-                  data-height="45"
-                  data-clutchcompany-id="1264412"
-                ></div>
-              </div>
-              <div className="content-group-item">
-                <a
-                  href="https://g.page/sftwrstudio/review?rc"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Image
-                    src="/google-my-business.svg"
-                    alt="Google Reviews"
-                    width={250}
-                    height={50}
                   />
                 </a>
               </div>
