@@ -32,7 +32,7 @@ function Navbar() {
         }
       >
         <div className="container-fluid">
-          <Link href="/">
+          <Link href="/#">
             <a className="navbar-brand" onClick={setNavCollapsed}>
               <Image
                 src="/software-studio.svg"
