@@ -64,9 +64,10 @@ function Header() {
         />
         <script
           defer
+          async
           src="https://kit.fontawesome.com/da12bdc16a.js"
           crossOrigin="anonymous"
-        />
+        ></script>
         <script
           defer
           async
